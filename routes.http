@@ -1,0 +1,27 @@
+POST http://localhost:3000/videos
+Content-Type: application/json; charset=utf-8
+
+{
+    "title": "Video Node",
+    "description": "Esse é o terceiro video",
+    "duration": 180
+}
+
+###
+# GET http://localhost:3000/videos?search=Next
+GET http://localhost:3000/videos
+
+
+###
+
+PUT  http://localhost:3000/videos/832c62b2-1bb9-4687-89a5-9db9c0bfd76f
+Content-Type: application/json; charset=utf-8
+
+{
+    "title": "Video next",
+    "description": "Esse é o primeiro video",
+    "duration": 240
+}
+
+###
+DELETE http://localhost:3000/videos/832c62b2-1bb9-4687-89a5-9db9c0bfd76f
